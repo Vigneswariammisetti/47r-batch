@@ -14,6 +14,8 @@ def no_of_palindromes(sentence):
 sentence=input("enter sentence:")
 no_of_palindromes(sentence)
 
+
+
 #CHECKING WHETHER THERE IS PALINDROMES OR NOT
 # sen=input("enter sentence:")
 # sen=sen.split()
