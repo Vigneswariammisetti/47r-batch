@@ -182,12 +182,51 @@ rows=5
 #             pattern+=" "+" "
 #     print(pattern)
 
-rows=7
+# rows=7
+# for i in range(1,rows+1):
+#     pattern=""
+#     for j in range(1,rows+1):
+#         if i==1 or i==rows or i+j==rows+1:
+#             pattern+="*"+" "
+#         else:
+#             pattern+=" "+" "
+#     print(pattern)
+
+# * * * * *
+#         *
+# * * * * *
+#         *
+# * * * * *
+
+rows=5
+mid=(rows//2)+1
 for i in range(1,rows+1):
     pattern=""
     for j in range(1,rows+1):
-        if i==1 or i==rows or i+j==rows+1:
+        if i==1 or i==rows or i==mid or j==rows:
             pattern+="*"+" "
         else:
             pattern+=" "+" "
+    print(pattern)
+
+#* * * * *
+#        *
+#* * * * *
+#*
+#* * * * *
+rows=11
+mid=(rows//2)+1
+for i in range(1,rows+1):
+    pattern=""
+    for j in range(1,rows+1):
+        if i<=mid:
+            if i==1 or i==mid or j==rows:
+                 pattern+="*"+" "
+            else:
+                  pattern+=" "+" "
+        else:
+            if i==rows or j==1:
+               pattern+="*"+" "
+            else:
+             pattern+=" "+" "
     print(pattern)
