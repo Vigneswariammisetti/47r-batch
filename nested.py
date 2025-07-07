@@ -106,7 +106,7 @@
 # *       
 # *       
 # * * * * *
-rows=5
+# rows=5
 # for i in range(1,rows+1):
 #     pattern=""
 #     for j in range(1,rows+1):
@@ -214,6 +214,7 @@ for i in range(1,rows+1):
 #* * * * *
 #*
 #* * * * *
+
 rows=11
 mid=(rows//2)+1
 for i in range(1,rows+1):
